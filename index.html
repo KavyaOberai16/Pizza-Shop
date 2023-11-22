@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script type="module" src="./scripts/controllers/product-controller.js" ></script>
+    <script defer src = "./scripts/services/payment.js"></script>
+    <style>
+       #output {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-8 {
+            flex: 0 0 65%; /* Adjust the width as needed */
+            margin-bottom: 20px; /* Add some bottom margin to create space between pizza pics */
+        }
+
+        .col-4 {
+            flex: 0 0 30%; /* Adjust the width as needed */
+        }
+        #basket {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 30px;
+        }
+
+        #rzp-button1 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- for creating margin -->
+    <div class="container">
+        <h1 class="alert alert-dark text-center">Pizza Shop</h1>
+        <div class="row" id="output">
+            <div class="col-8" >
+                <!-- Pizzas dynamically loaded here -->
+            </div>
+            
+            <div class="col-4" id="basket">
+                <!-- Pay button here -->
+                <button id="rzp-button1">Pay</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
