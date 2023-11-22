@@ -1,2 +1,3 @@
 # Pizza-Shop
-This is a static and fun website that I have created using HTML and JavaScript with payment features like RazorPay.  
+Hello There!
+This is a static and fun website that I have created using HTML,JavaScript and Bootstrap with payment features like RazorPay.   
